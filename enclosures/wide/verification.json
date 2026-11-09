@@ -1,0 +1,63 @@
+{
+  "revision": "wide-r05",
+  "envelope_mm": [
+    107.8,
+    59.8,
+    29.8
+  ],
+  "parts": {
+    "body.stl": {
+      "sha256": "1970cf1f05fceaac10125cc3bdaa23b722d4a62e0cb7f03b89bc95f4a5539814",
+      "dimensions_mm": [
+        107.8,
+        77.8,
+        27.4
+      ],
+      "volume_cm3": 40.9,
+      "closed_mesh": true,
+      "non_manifold": false,
+      "components": 1,
+      "facets": 10994
+    },
+    "lid.stl": {
+      "sha256": "526a1953c648c2c409b3e04c7728589cfed35da139260b09b5f2d6f64cf9ce2a",
+      "dimensions_mm": [
+        107.8,
+        59.8,
+        17.6
+      ],
+      "volume_cm3": 17.39,
+      "closed_mesh": true,
+      "non_manifold": false,
+      "components": 1,
+      "facets": 3004
+    },
+    "board-carrier.stl": {
+      "sha256": "22e48115877fb7748caca9120073808c1f44b53082f931ee307a856528d7f79b",
+      "dimensions_mm": [
+        60.28,
+        26.6,
+        9.5
+      ],
+      "volume_cm3": 4.21,
+      "closed_mesh": true,
+      "non_manifold": false,
+      "components": 1,
+      "facets": 1832
+    },
+    "usb-cover.stl": {
+      "sha256": "30f2badc850d1f83bba1147cda6c6dc2bc7ce7ef06be576ba4e9a4d28ed611a2",
+      "dimensions_mm": [
+        18.0,
+        17.5,
+        3.8
+      ],
+      "volume_cm3": 0.56,
+      "closed_mesh": true,
+      "non_manifold": false,
+      "components": 1,
+      "facets": 1392
+    }
+  },
+  "assembly_collisions": []
+}

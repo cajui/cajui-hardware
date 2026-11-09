@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+# FreeCAD backup files
+*.FCBak
+*.FCStd1
+*.zip

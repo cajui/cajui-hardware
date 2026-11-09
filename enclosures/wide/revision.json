@@ -1,0 +1,46 @@
+{
+  "revision": "wide-r05",
+  "date": "2026-11-09",
+  "status": "physical test pending",
+  "description": "45° chamfer at the mouth of the four insert holes, from Ø4.0 to Ø5.0 mm, so heat-set inserts start centred and upright: on the r04 print, inserts set with a soldering iron ended up off centre and the lid screws were hard to start. Only the body changed; lid, board carrier and USB cover are identical to r04.",
+  "source": "model.py (exported by export.py in freecadcmd)",
+  "parts": {
+    "body.stl": {
+      "quantity": 1,
+      "sha256": "1970cf1f05fceaac10125cc3bdaa23b722d4a62e0cb7f03b89bc95f4a5539814"
+    },
+    "lid.stl": {
+      "quantity": 1,
+      "sha256": "526a1953c648c2c409b3e04c7728589cfed35da139260b09b5f2d6f64cf9ce2a",
+      "same_as": "wide-r04"
+    },
+    "board-carrier.stl": {
+      "quantity": 1,
+      "sha256": "22e48115877fb7748caca9120073808c1f44b53082f931ee307a856528d7f79b",
+      "same_as": "wide-r03"
+    },
+    "usb-cover.stl": {
+      "quantity": 1,
+      "sha256": "30f2badc850d1f83bba1147cda6c6dc2bc7ce7ef06be576ba4e9a4d28ed611a2",
+      "same_as": "wide-r04"
+    }
+  },
+  "hardware": {
+    "lid": "4 M3x8 screws + 4 M3 heat-set inserts in the columns",
+    "board_carrier": "none: drops onto the floor pins, held by the lid",
+    "cable_gland": "1 M8x1.25 cable gland (2 to 4 mm cable)",
+    "antenna": "bulkhead SMA connector in the 6.8 mm hole, IPEX 1.0 pigtail"
+  },
+  "limits": [
+    "Insert hole Ø4.0 x 6.5 mm, chamfered to Ø5.0 at the mouth, sized for an M3 insert 5.7 mm long and Ø4.6 outside; check against the insert used.",
+    "The 0.5 mm chamfer is a design choice, not yet printed: check that the insert starts centred.",
+    "USB-C height above the board and how far it overhangs the edge are estimates.",
+    "No tested sealing: the lid has no gasket; use under cover.",
+    "The battery cable and the antenna pigtail are not modelled.",
+    "Pin clearance (0.2 mm on the radius) and lid post clearance (0.3 mm) untested: with the lid open the carrier only rests on the pins.",
+    "RST and USER buttons are not dimensioned in the datasheet: position, protrusion (0.8 mm) and height estimated from the drawing scale; check with calipers.",
+    "Cable gland nut modelled as a Ø14 x 4 mm cylinder, not measured on the actual part.",
+    "USB cover held by friction only (0.1 mm clearance per side on the width and 0.15 mm on the height); untested.",
+    "The I²C adapter of the sensor cable has no fixed place in the enclosure yet."
+  ]
+}
