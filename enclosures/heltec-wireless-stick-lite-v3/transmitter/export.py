@@ -1,7 +1,7 @@
-"""Exports the wide enclosure STLs, already oriented for printing, and the verification report.
+"""Exports the enclosure STLs, already oriented for printing, and the verification report.
 
 Usage, from the repository root:
-    freecadcmd enclosures/wide/export.py
+    freecadcmd enclosures/heltec-wireless-stick-lite-v3/transmitter/export.py
 
 On macOS, freecadcmd is at /Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd.
 """
@@ -22,7 +22,7 @@ HERE = next(
 sys.path.insert(0, HERE)
 import model  # noqa: E402  (needs the path above)
 
-REVISION = "wide-r05"
+REVISION = "r05"
 OUTPUT = os.path.join(HERE, "print")
 # Print orientation (axis and rotation from the assembly): body and carrier with the base
 # on the bed; lid upside down, with the outer face on the bed; USB cover with the flange on

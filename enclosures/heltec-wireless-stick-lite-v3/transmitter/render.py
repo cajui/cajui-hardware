@@ -1,7 +1,7 @@
 """Renders print/preview.png: the assembled enclosure without the lid, with ghost parts.
 
 Needs the FreeCAD GUI (freecadcmd cannot render). Usage, from the repository root:
-    FreeCAD enclosures/wide/render.py
+    FreeCAD enclosures/heltec-wireless-stick-lite-v3/transmitter/render.py
 
 On macOS, FreeCAD is at /Applications/FreeCAD.app/Contents/MacOS/FreeCAD. The window
 closes by itself once the image is saved.

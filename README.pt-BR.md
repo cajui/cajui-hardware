@@ -8,9 +8,9 @@ paramétricos do FreeCAD.**
 Este repositório é a camada de hardware do [Cajuí](https://github.com/cajui/docs). O firmware
 dos transmissores fica no [cajui-firmware](https://github.com/cajui/cajui-firmware).
 
-| Caixa | Placa | Bateria | Revisão | Situação |
+| Placa | Função | Bateria | Revisão | Situação |
 | --- | --- | --- | --- | --- |
-| [Ampla](enclosures/wide/README.pt-BR.md) | Heltec Wireless Stick Lite V3 | Uma célula 18650 protegida | `wide-r05` | Ensaio físico pendente |
+| Heltec Wireless Stick Lite V3 | [Transmissor](enclosures/heltec-wireless-stick-lite-v3/transmitter/README.pt-BR.md) | Uma célula 18650 protegida | `r05` | Ensaio físico pendente |
 
 **Desenhos experimentais.** Cada revisão é conferida no modelo (malhas fechadas, sem colisões
 entre as peças montadas), mas o encaixe só se conhece depois de imprimir. A resistência à água
@@ -18,7 +18,9 @@ não foi ensaiada: use as caixas em local coberto.
 
 ## Organização
 
-Cada caixa tem sua pasta:
+As caixas ficam organizadas por placa e depois por função: `enclosures/<placa>/<função>/`. Os
+nomes das pastas das placas são os perfis de placa do cajui-firmware, com hífen no lugar do
+sublinhado. Cada pasta de caixa tem:
 
 - **`model.py`:** o modelo paramétrico, com todas as medidas num dicionário.
 - **`export.py`:** gera os STLs, já orientados para impressão, e o `verification.json`.
@@ -27,8 +29,8 @@ Cada caixa tem sua pasta:
 - **`revision.json`:** a revisão, o SHA-256 de cada STL e os limites conhecidos.
 - **`README.md`:** o que imprimir, as ferragens, a montagem e o que conferir.
 
-Os nomes dos STLs se mantêm entre revisões. Cada revisão recebe a tag `<caixa>-rNN`, por
-exemplo `wide-r05`.
+Os nomes dos STLs se mantêm entre revisões. Cada revisão recebe a tag
+`<placa>/<função>/rNN`, por exemplo `heltec-wireless-stick-lite-v3/transmitter/r05`.
 
 ## Requisitos
 

@@ -1,8 +1,9 @@
-# Caixa ampla: Wireless Stick Lite V3 + 18650
+# Caixa do transmissor: Heltec Wireless Stick Lite V3 + 18650
 
 [English](README.md) | Português brasileiro
 
-**Revisão atual: `wide-r05`, ensaio físico pendente.**
+**Revisão atual: `r05` (tag `heltec-wireless-stick-lite-v3/transmitter/r05`), ensaio
+físico pendente.**
 
 Caixa para um transmissor montado na Heltec Wireless Stick Lite V3, alimentado por uma célula
 18650 protegida, com o sensor num cabo. Ela é instalada em pé, contra uma parede. A abertura
@@ -88,23 +89,23 @@ PETG, camada de 0,2 mm, 4 paredes, escala 100%. O SHA-256 de cada arquivo está 
 
 Para atualizar uma caixa já impressa, reimprima só as peças que mudaram.
 
-- **wide-r05 (09/11/2026).** Chanfro de 45° na boca dos quatro furos dos insertos. Na
+- **r05 (09/11/2026).** Chanfro de 45° na boca dos quatro furos dos insertos. Na
   impressão da r04, os insertos colocados com ferro de solda ficaram fora do centro.
   Reimprima só o `body.stl`.
-- **wide-r04.**
+- **r04.**
   - A caixa ficou 10 mm mais comprida na ponta de baixo, com um batente que impede a bateria
     de escorregar até o prensa-cabo.
   - Ficou 2 mm mais alta, com 5,3 mm livres sobre a bateria para os cabos.
   - A coluna junto do botão USER ficou só na metade de cima, com chanfro de 45° por baixo.
     Inteira, ela deixava o botão pressionado.
   - Tampinha nova para a abertura do USB-C.
-- **wide-r03.**
+- **r03.**
   - Suporte da placa sem parafusos: ele assenta em dois pinos do piso e é preso pelos pilares
     da tampa.
   - Travessas nas pontas dos trilhos, com o meio vazado.
   - Placa 2 mm mais alta.
   - 8,6 mm entre as cabeças para o adaptador do cabo da bateria.
-- **wide-r01 e wide-r02.** Primeira disposição. Os trilhos da r01 abriam e soltavam a placa; a
+- **r01 e r02.** Primeira disposição. Os trilhos da r01 abriam e soltavam a placa; a
   r02 passou a uni-los.
 
 As revisões anteriores à r05 são de antes deste repositório, e os arquivos delas não ficam
@@ -115,8 +116,10 @@ aqui.
 Na raiz do repositório:
 
 ```sh
-freecadcmd enclosures/wide/export.py   # STLs em print/ e verification.json
-FreeCAD enclosures/wide/render.py      # print/preview.png; precisa da interface do FreeCAD
+# STLs em print/ e verification.json
+freecadcmd enclosures/heltec-wireless-stick-lite-v3/transmitter/export.py
+# print/preview.png; precisa da interface do FreeCAD
+FreeCAD enclosures/heltec-wireless-stick-lite-v3/transmitter/render.py
 ```
 
 No macOS, os dois programas ficam em

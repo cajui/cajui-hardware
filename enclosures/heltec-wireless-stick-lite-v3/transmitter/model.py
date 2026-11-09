@@ -1,4 +1,4 @@
-"""Wide transmitter enclosure: Heltec Wireless Stick Lite V3 + protected 18650 cell.
+"""Transmitter enclosure for the Heltec Wireless Stick Lite V3 with a protected 18650 cell.
 
 Parametric FreeCAD (Part) model. Runs in the FreeCAD GUI or in freecadcmd. Dimensions in
 mm; origin at the outer bottom corner of the body, x along the length, y across the
@@ -368,7 +368,7 @@ COLORS = {
 }
 
 
-def build(name="WideEnclosure"):
+def build(name="StickLiteTransmitter"):
     doc = App.getDocument(name) if name in App.listDocuments() else App.newDocument(name)
     for obj in list(doc.Objects):
         doc.removeObject(obj.Name)

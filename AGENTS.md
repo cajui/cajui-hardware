@@ -2,6 +2,9 @@
 
 - Keep code, comments, technical documentation and commit messages in English. Keep each
   `README.md` and its `README.pt-BR.md` equivalent; the latter uses Brazilian Portuguese.
+- Organise enclosures as `enclosures/<board>/<function>/`. Board folders use the cajui-firmware
+  board profile name with hyphens (`heltec-wireless-stick-lite-v3`); functions are
+  `transmitter` or `receiver`, with a suffix for a variant (`transmitter-lipo`).
 - Change geometry only in `model.py`. STLs, `verification.json` and `preview.png` are
   generated: regenerate them with `export.py` and `render.py`, never edit them by hand.
 - After exporting, every part must be a closed mesh, without non-manifold edges, in a single
@@ -11,7 +14,7 @@
   - bump `REVISION` in `export.py`;
   - update `revision.json` (description, hashes, `same_as`, limits);
   - in both READMEs, update the revision history and the parts to reprint;
-  - tag the commit `<enclosure>-rNN`.
+  - tag the commit `<board>/<function>/rNN`.
 
   Never move an existing tag. Keep STL file names stable.
 - Do not describe a fit as validated until a print has confirmed it. Mark estimates and

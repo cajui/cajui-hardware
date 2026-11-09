@@ -1,8 +1,9 @@
-# Wide enclosure: Wireless Stick Lite V3 + 18650
+# Transmitter enclosure: Heltec Wireless Stick Lite V3 + 18650
 
 English | [Português brasileiro](README.pt-BR.md)
 
-**Current revision: `wide-r05`, physical test pending.**
+**Current revision: `r05` (tag `heltec-wireless-stick-lite-v3/transmitter/r05`), physical
+test pending.**
 
 Enclosure for a transmitter built on the Heltec Wireless Stick Lite V3, powered by one
 protected 18650 cell, with the sensor on a cable. It is installed upright against a wall.
@@ -88,21 +89,21 @@ The four files come oriented for printing and need no supports. Suggested settin
 
 To update an enclosure that was already printed, reprint only the parts that changed.
 
-- **wide-r05 (2026-11-09).** 45° chamfer at the mouth of the four insert holes. On the r04
+- **r05 (2026-11-09).** 45° chamfer at the mouth of the four insert holes. On the r04
   print, inserts set with a soldering iron ended up off centre. Reprint only `body.stl`.
-- **wide-r04.**
+- **r04.**
   - The enclosure is 10 mm longer at the bottom end, with a stop that keeps the battery from
     sliding onto the cable gland.
   - It is 2 mm taller, leaving 5.3 mm free above the battery for the cables.
   - The column next to the USER button only fills the upper half, with a 45° chamfer
     underneath. At full height it pressed the button.
   - New USB-C opening cover.
-- **wide-r03.**
+- **r03.**
   - Screwless board carrier: it sits on two floor pins and is held by the lid posts.
   - Crossbars at the ends of the rails, with the middle left open.
   - Board 2 mm higher.
   - 8.6 mm between the heads for the battery cable adapter.
-- **wide-r01 and wide-r02.** First layout. The r01 rails spread and released the board; r02
+- **r01 and r02.** First layout. The r01 rails spread and released the board; r02
   joined them.
 
 Revisions before r05 predate this repository, and their files are not kept here.
@@ -112,8 +113,10 @@ Revisions before r05 predate this repository, and their files are not kept here.
 From the repository root:
 
 ```sh
-freecadcmd enclosures/wide/export.py   # STLs in print/ and verification.json
-FreeCAD enclosures/wide/render.py      # print/preview.png; needs the FreeCAD GUI
+# STLs in print/ and verification.json
+freecadcmd enclosures/heltec-wireless-stick-lite-v3/transmitter/export.py
+# print/preview.png; needs the FreeCAD GUI
+FreeCAD enclosures/heltec-wireless-stick-lite-v3/transmitter/render.py
 ```
 
 On macOS, the two programs are `/Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd`

@@ -1,5 +1,5 @@
 {
-  "revision": "wide-r05",
+  "revision": "r05",
   "date": "2026-11-09",
   "status": "physical test pending",
   "description": "45° chamfer at the mouth of the four insert holes, from Ø4.0 to Ø5.0 mm, so heat-set inserts start centred and upright: on the r04 print, inserts set with a soldering iron ended up off centre and the lid screws were hard to start. Only the body changed; lid, board carrier and USB cover are identical to r04.",
@@ -12,17 +12,17 @@
     "lid.stl": {
       "quantity": 1,
       "sha256": "526a1953c648c2c409b3e04c7728589cfed35da139260b09b5f2d6f64cf9ce2a",
-      "same_as": "wide-r04"
+      "same_as": "r04"
     },
     "board-carrier.stl": {
       "quantity": 1,
       "sha256": "22e48115877fb7748caca9120073808c1f44b53082f931ee307a856528d7f79b",
-      "same_as": "wide-r03"
+      "same_as": "r03"
     },
     "usb-cover.stl": {
       "quantity": 1,
       "sha256": "30f2badc850d1f83bba1147cda6c6dc2bc7ce7ef06be576ba4e9a4d28ed611a2",
-      "same_as": "wide-r04"
+      "same_as": "r04"
     }
   },
   "hardware": {
