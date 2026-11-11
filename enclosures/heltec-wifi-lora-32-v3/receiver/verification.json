@@ -1,0 +1,50 @@
+{
+  "revision": "r01",
+  "envelope_mm": [
+    68.8,
+    55.3,
+    22.8
+  ],
+  "parts": {
+    "body.stl": {
+      "sha256": "3a7fc5ce45d6b69a527a271c95bfbe46e13c5ba7d1f76f368370599a24390493",
+      "dimensions_mm": [
+        68.8,
+        55.3,
+        20.4
+      ],
+      "volume_cm3": 22.49,
+      "closed_mesh": true,
+      "non_manifold": false,
+      "components": 1,
+      "facets": 7850
+    },
+    "lid.stl": {
+      "sha256": "82bd2ec98a1e0285ba627421986520bfecb3849a229a9e851ea7683f476390e4",
+      "dimensions_mm": [
+        68.8,
+        55.3,
+        7.2
+      ],
+      "volume_cm3": 7.84,
+      "closed_mesh": true,
+      "non_manifold": false,
+      "components": 1,
+      "facets": 4846
+    },
+    "board-carrier.stl": {
+      "sha256": "24496ed08bbf04b1c6e9d03ece860557399cae1c7b8536435a1db38ac8b4ad69",
+      "dimensions_mm": [
+        53.4,
+        29.35,
+        12.9
+      ],
+      "volume_cm3": 7.01,
+      "closed_mesh": true,
+      "non_manifold": false,
+      "components": 1,
+      "facets": 1832
+    }
+  },
+  "assembly_collisions": []
+}

@@ -11,6 +11,7 @@ transmitter firmware lives in [cajui-firmware](https://github.com/cajui/cajui-fi
 | Board | Function | Battery | Revision | Status |
 | --- | --- | --- | --- | --- |
 | Heltec Wireless Stick Lite V3 | [Transmitter](enclosures/heltec-wireless-stick-lite-v3/transmitter/README.md) | One protected 18650 cell | `r05` | Physical test pending |
+| Heltec WiFi LoRa 32 V3 | [Receiver](enclosures/heltec-wifi-lora-32-v3/receiver/README.md) | None, USB-C powered | `r01` | Physical test pending |
 
 **Experimental designs.** Each revision is checked in the model (closed meshes, no collisions
 between the assembled parts), but fit is only known after printing. Water resistance has not
