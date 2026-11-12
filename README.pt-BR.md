@@ -11,7 +11,7 @@ dos transmissores fica no [cajui-firmware](https://github.com/cajui/cajui-firmwa
 | Placa | Função | Bateria | Revisão | Situação |
 | --- | --- | --- | --- | --- |
 | Heltec Wireless Stick Lite V3 | [Transmissor](enclosures/heltec-wireless-stick-lite-v3/transmitter/README.pt-BR.md) | Uma célula 18650 protegida | `r05` | Ensaio físico pendente |
-| Heltec WiFi LoRa 32 V3 | [Receptora](enclosures/heltec-wifi-lora-32-v3/receiver/README.pt-BR.md) | Nenhuma, alimentada pelo USB-C | `r02` | Suporte e tampa conferidos a seco; corpo sem ensaio |
+| Heltec WiFi LoRa 32 V3 | [Receptora](enclosures/heltec-wifi-lora-32-v3/receiver/README.pt-BR.md) | Nenhuma, alimentada pelo USB-C | `r02` | Impressa e montada; funcionamento relatado |
 
 **Desenhos experimentais.** Cada revisão é conferida no modelo (malhas fechadas, sem colisões
 entre as peças montadas), mas o encaixe só se conhece depois de imprimir. A resistência à água

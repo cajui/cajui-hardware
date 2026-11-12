@@ -1,7 +1,7 @@
 {
   "revision": "r02",
   "date": "2026-11-12",
-  "status": "carrier and lid dry-fitted with the board at r02, window reported good; body untested",
+  "status": "all parts printed and assembled with the board at r02; reported working",
   "description": "Receiver enclosure: flat box for a shelf, board carrier with rails raised on a 5 mm base, OLED window with a 45° chamfer in the lid, PRG pressed through a flexible tab with a nub, RST through a pinhole, USB-C through the back wall, bulkhead SMA through the lid at the back corner. No battery; header pins removed from the board. r02 closes the window in on the display area by eye after the r01 dry fit: 2 mm at the USB end, 5 mm at the antenna end, 3.5 mm on the RST side. Lid only.",
   "source": "model.py (exported by export.py in freecadcmd)",
   "parts": {
