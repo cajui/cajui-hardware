@@ -22,7 +22,7 @@ HERE = next(
 sys.path.insert(0, HERE)
 import model  # noqa: E402  (needs the path above)
 
-REVISION = "r01"
+REVISION = "r02"
 OUTPUT = os.path.join(HERE, "print")
 # Print orientation (axis and rotation from the assembly): body and carrier with the base
 # on the bed; lid upside down, with the outer face on the bed

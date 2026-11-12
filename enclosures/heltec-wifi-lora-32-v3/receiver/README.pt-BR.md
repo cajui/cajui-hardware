@@ -2,8 +2,8 @@
 
 [English](README.md) | Português brasileiro
 
-**Revisão atual: `r01` (tag `heltec-wifi-lora-32-v3/receiver/r01`), ensaio físico
-pendente.**
+**Revisão atual: `r02` (tag `heltec-wifi-lora-32-v3/receiver/r02`). Suporte e tampa
+conferidos a seco com a placa na r01; corpo e janela da r02 sem ensaio.**
 
 Caixa para uma receptora montada na Heltec WiFi LoRa 32 V3, alimentada pelo USB-C e
 instalada dentro de casa, apoiada numa prateleira, como um modem. A placa fica deitada
@@ -49,6 +49,10 @@ pigtail e o conector SMA. A placa fica elevada na base do suporte para o vidro d
 ficar a 1 mm da tampa, enquanto a faixa do SMA mantém a altura inteira para o corpo do
 conector e a curva do pigtail.
 
+A janela tem 28,3 × 18,5 mm, fechada sobre a área da tela e não sobre o vidro: as bordas
+ficam para dentro do contorno do vidro 1 mm na ponta do USB, 4 mm na ponta da antena (faixa
+do flex) e 1,8 mm no lado do RST, e 1,7 mm para fora dele no lado do PRG.
+
 Na tampa, sobre a ponta do USB da placa: o RST por um furo de 3 mm (aperte com um
 palito) e o PRG por uma aba de 12 × 6 mm recortada por uma fenda em U, com 1 mm de
 espessura e um pino de 4 mm por baixo que para 0,3 mm acima do botão. Apertar a aba aperta
@@ -77,7 +81,8 @@ cabeças, dá para conferir todas as aberturas contra a placa antes de imprimir 
 
 - A placa desliza nos trilhos sem forçar, até as cabeças, e a solda que ficou nos furos
   dos pinos não prende nos lábios.
-- O vidro do OLED fica centralizado na janela e sem tocar na tampa.
+- A área inteira da tela aparece pela janela, sem a tampa cobrir nada dela, e o vidro não
+  toca na tampa.
 - O furo do RST fica sobre o botão RST, e o pino do PRG cai sobre a cúpula do botão PRG:
   apertar a aba abre o portal de configuração depois de 3 s.
 - A placa para nas cabeças com o USB-C a uns 0,5 mm da ponta de trás do suporte, e o cabo
@@ -91,7 +96,10 @@ cabeças, dá para conferir todas as aberturas contra a placa antes de imprimir 
 
 ## Histórico de revisões
 
-- **r01 (11/11/2026).** Primeira disposição. Sem ensaio.
+- **r02 (12/11/2026).** Janela fechada sobre a área da tela depois do encaixe a seco da
+  r01: 2 mm na ponta do USB, 5 mm na ponta da antena, 3,5 mm no lado do RST. Reimprimir: tampa.
+- **r01 (11/11/2026).** Primeira disposição. Suporte e tampa conferidos a seco com a
+  placa: encaixe bom, janela mostrava vidro sem tela em três bordas.
 
 ## Regerar
 

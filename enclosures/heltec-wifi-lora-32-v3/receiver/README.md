@@ -2,8 +2,8 @@
 
 English | [Português brasileiro](README.pt-BR.md)
 
-**Current revision: `r01` (tag `heltec-wifi-lora-32-v3/receiver/r01`), physical test
-pending.**
+**Current revision: `r02` (tag `heltec-wifi-lora-32-v3/receiver/r02`). Carrier and lid
+dry-fitted with the board at r01; body and the r02 window untested.**
 
 Enclosure for a receiver built on the Heltec WiFi LoRa 32 V3, powered through its USB-C
 and installed indoors on a shelf, like a modem. The board lies flat with the OLED facing
@@ -47,6 +47,10 @@ connector. The board is raised on the carrier base so the OLED glass sits 1 mm u
 lid while the SMA band keeps its full height for the connector body and the bend of the
 pigtail.
 
+The window is 28.3 × 18.5 mm, closed in on the display area rather than on the glass: its
+edges sit inside the glass outline by 1 mm at the USB end, 4 mm at the antenna end (flex
+strip) and 1.8 mm on the RST side, and 1.7 mm outside it on the PRG side.
+
 On the lid, over the USB end of the board: RST through a 3 mm pinhole (press with a
 toothpick) and PRG through a 12 × 6 mm tab cut by a U-shaped slot, 1 mm thick, with a 4 mm
 nub underneath that stops 0.3 mm above the switch. Pressing the tab presses PRG. Pinhole
@@ -75,7 +79,8 @@ the heads, every opening can be checked against the board before printing the bo
 
 - The board slides into the rails without force, up to the heads, and the solder left in
   the header holes does not catch on the lips.
-- The OLED glass is centred in the window and not touching the lid.
+- The whole display area shows through the window, with the lid clipping none of it, and
+  the glass does not touch the lid.
 - The RST pinhole is over the RST switch, and the PRG nub lands on the PRG switch dome: a
   press on the tab opens the configuration portal after 3 s.
 - The board stops at the heads with the USB-C about 0.5 mm from the carrier's back end,
@@ -89,7 +94,10 @@ the heads, every opening can be checked against the board before printing the bo
 
 ## Revision history
 
-- **r01 (2026-11-11).** First layout. Untested.
+- **r02 (2026-11-12).** Window closed in on the display area after the r01 dry fit: 2 mm
+  at the USB end, 5 mm at the antenna end, 3.5 mm on the RST side. Reprint: lid.
+- **r01 (2026-11-11).** First layout. Carrier and lid dry-fitted with the board: fit
+  reported good, window showed glass without display at three edges.
 
 ## Regenerate
 

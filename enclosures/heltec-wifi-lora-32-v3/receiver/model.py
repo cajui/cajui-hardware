@@ -69,13 +69,20 @@ P = {
     "prg_from_edge": 6.0,
     "button_side": 3.5,
     "button_height": 2.0,
-    # Lid openings over the board. Window 1 mm larger than the glass along X and 1.7 mm
-    # inside the PCB edges across; a 45° chamfer on the outside widens the viewing angle.
+    # Lid openings over the board. Window around the OLED glass, as margins past the glass
+    # edges (negative: inside the glass): back (USB end), front (antenna end), RST side (-Y)
+    # and PRG side (+Y). r01 had 1.0 at both ends and 1.72 at both sides (22 mm, centred on
+    # the board). Its dry fit showed glass without display at the antenna end (flex strip),
+    # on the RST side and a little at the USB end, so r02 closes the window there by eye:
+    # 2 mm at the USB end, 5 mm at the antenna end, 3.5 mm on the RST side. The dark display
+    # area itself was not measured. A 45° chamfer on the outside widens the viewing angle.
     # PRG is pressed through a flexible tab cut into the lid, with a nub underneath that
     # stops 0.3 mm above the switch; RST only through a pinhole, with a toothpick. Nub and
     # pinhole are stadium-shaped, stretched along X by the board length uncertainty
-    "window_margin": 1.0,
-    "window_width": 22.0,
+    "window_margin_back": -1.0,
+    "window_margin_front": -4.0,
+    "window_margin_rst": -1.78,
+    "window_margin_prg": 1.72,
     "window_chamfer": 1.2,
     "tab_length": 12.0,
     "tab_width": 6.0,
@@ -263,21 +270,22 @@ def geometry(p=P):
         lid = lid.cut(cylinder(p["m3_hole"] / 2, tl + 2, V(cx, cy, hb - 1), V(0, 0, 1)))
 
     # OLED window, measured from the antenna end of the board, which the heads locate
-    ol, ow, om = p["oled_length"], p["oled_width"], p["window_margin"]
+    ol, ow = p["oled_length"], p["oled_width"]
     x_glass1 = x_front - p["oled_from_front_end"]
     x_glass0 = x_glass1 - ol
-    x_win0, x_win1 = x_glass0 - om, x_glass1 + om
-    y_win0 = yc_board - p["window_width"] / 2
-    lid = lid.cut(box(x_win0, y_win0, hb - 1, x_win1 - x_win0, p["window_width"], tl + 2))
+    y_glass0 = yc_board - ow / 2
+    x_win0, x_win1 = x_glass0 - p["window_margin_back"], x_glass1 + p["window_margin_front"]
+    y_win0, y_win1 = y_glass0 - p["window_margin_rst"], y_glass0 + ow + p["window_margin_prg"]
+    lid = lid.cut(box(x_win0, y_win0, hb - 1, x_win1 - x_win0, y_win1 - y_win0, tl + 2))
     wc = p["window_chamfer"]
     funnel = Part.makeLoft(
         [
             Part.makePolygon([V(x_win0, y_win0, hb + tl - wc), V(x_win1, y_win0, hb + tl - wc),
-                              V(x_win1, y_win0 + p["window_width"], hb + tl - wc),
-                              V(x_win0, y_win0 + p["window_width"], hb + tl - wc), V(x_win0, y_win0, hb + tl - wc)]),
+                              V(x_win1, y_win1, hb + tl - wc),
+                              V(x_win0, y_win1, hb + tl - wc), V(x_win0, y_win0, hb + tl - wc)]),
             Part.makePolygon([V(x_win0 - wc - 1, y_win0 - wc - 1, hb + tl + 1), V(x_win1 + wc + 1, y_win0 - wc - 1, hb + tl + 1),
-                              V(x_win1 + wc + 1, y_win0 + p["window_width"] + wc + 1, hb + tl + 1),
-                              V(x_win0 - wc - 1, y_win0 + p["window_width"] + wc + 1, hb + tl + 1),
+                              V(x_win1 + wc + 1, y_win1 + wc + 1, hb + tl + 1),
+                              V(x_win0 - wc - 1, y_win1 + wc + 1, hb + tl + 1),
                               V(x_win0 - wc - 1, y_win0 - wc - 1, hb + tl + 1)]),
         ],
         True,
