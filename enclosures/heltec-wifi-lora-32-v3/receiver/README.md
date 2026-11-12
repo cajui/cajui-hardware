@@ -51,6 +51,11 @@ The window is 28.3 × 18.5 mm, closed in on the display area rather than on the 
 edges sit inside the glass outline by 1 mm at the USB end, 4 mm at the antenna end (flex
 strip) and 1.8 mm on the RST side, and 1.7 mm outside it on the PRG side.
 
+The box is read from the RST side: display on the right, USB cable out on the left and
+antenna at the back corner. The receiver firmware draws its setup screen rotated 180° for
+this orientation ([cajui-firmware #40](https://github.com/cajui/cajui-firmware/pull/40)); a
+bare board held with the USB-C down shows it upside down.
+
 On the lid, over the USB end of the board: RST through a 3 mm pinhole (press with a
 toothpick) and PRG through a 12 × 6 mm tab cut by a U-shaped slot, 1 mm thick, with a 4 mm
 nub underneath that stops 0.3 mm above the switch. Pressing the tab presses PRG. Pinhole

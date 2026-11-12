@@ -53,6 +53,11 @@ A janela tem 28,3 × 18,5 mm, fechada sobre a área da tela e não sobre o vidro
 ficam para dentro do contorno do vidro 1 mm na ponta do USB, 4 mm na ponta da antena (faixa
 do flex) e 1,8 mm no lado do RST, e 1,7 mm para fora dele no lado do PRG.
 
+A caixa é lida pelo lado do RST: tela à direita, cabo USB saindo pela esquerda e antena no
+canto de trás. O firmware da receptora desenha a tela de configuração girada 180° para essa
+orientação ([cajui-firmware #40](https://github.com/cajui/cajui-firmware/pull/40)); a placa
+pelada, com o USB-C para baixo, mostra o texto invertido.
+
 Na tampa, sobre a ponta do USB da placa: o RST por um furo de 3 mm (aperte com um
 palito) e o PRG por uma aba de 12 × 6 mm recortada por uma fenda em U, com 1 mm de
 espessura e um pino de 4 mm por baixo que para 0,3 mm acima do botão. Apertar a aba aperta
