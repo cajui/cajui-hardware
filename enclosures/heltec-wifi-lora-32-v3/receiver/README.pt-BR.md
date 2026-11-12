@@ -3,7 +3,7 @@
 [English](README.md) | Português brasileiro
 
 **Revisão atual: `r02` (tag `heltec-wifi-lora-32-v3/receiver/r02`). Suporte e tampa
-conferidos a seco com a placa na r01; corpo e janela da r02 sem ensaio.**
+conferidos a seco com a placa na r02, janela aprovada; corpo sem ensaio.**
 
 Caixa para uma receptora montada na Heltec WiFi LoRa 32 V3, alimentada pelo USB-C e
 instalada dentro de casa, apoiada numa prateleira, como um modem. A placa fica deitada
@@ -98,6 +98,7 @@ cabeças, dá para conferir todas as aberturas contra a placa antes de imprimir 
 
 - **r02 (12/11/2026).** Janela fechada sobre a área da tela depois do encaixe a seco da
   r01: 2 mm na ponta do USB, 5 mm na ponta da antena, 3,5 mm no lado do RST. Reimprimir: tampa.
+  Tampa conferida a seco com a placa: janela aprovada.
 - **r01 (11/11/2026).** Primeira disposição. Suporte e tampa conferidos a seco com a
   placa: encaixe bom, janela mostrava vidro sem tela em três bordas.
 

@@ -3,7 +3,7 @@
 English | [Português brasileiro](README.pt-BR.md)
 
 **Current revision: `r02` (tag `heltec-wifi-lora-32-v3/receiver/r02`). Carrier and lid
-dry-fitted with the board at r01; body and the r02 window untested.**
+dry-fitted with the board at r02, window reported good; body untested.**
 
 Enclosure for a receiver built on the Heltec WiFi LoRa 32 V3, powered through its USB-C
 and installed indoors on a shelf, like a modem. The board lies flat with the OLED facing
@@ -95,7 +95,8 @@ the heads, every opening can be checked against the board before printing the bo
 ## Revision history
 
 - **r02 (2026-11-12).** Window closed in on the display area after the r01 dry fit: 2 mm
-  at the USB end, 5 mm at the antenna end, 3.5 mm on the RST side. Reprint: lid.
+  at the USB end, 5 mm at the antenna end, 3.5 mm on the RST side. Reprint: lid. Lid
+  dry-fitted with the board: window reported good.
 - **r01 (2026-11-11).** First layout. Carrier and lid dry-fitted with the board: fit
   reported good, window showed glass without display at three edges.
 
