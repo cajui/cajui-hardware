@@ -1,0 +1,43 @@
+{
+  "revision": "r02",
+  "date": "2026-11-12",
+  "status": "all parts printed and assembled with the board at r02; reported working",
+  "description": "Receiver enclosure: flat box for a shelf, board carrier with rails raised on a 5 mm base, OLED window with a 45° chamfer in the lid, PRG pressed through a flexible tab with a nub, RST through a pinhole, USB-C through the back wall, bulkhead SMA through the lid at the back corner. No battery; header pins removed from the board. r02 closes the window in on the display area by eye after the r01 dry fit: 2 mm at the USB end, 5 mm at the antenna end, 3.5 mm on the RST side. Lid only.",
+  "source": "model.py (exported by export.py in freecadcmd)",
+  "parts": {
+    "body.stl": {
+      "quantity": 1,
+      "sha256": "3a7fc5ce45d6b69a527a271c95bfbe46e13c5ba7d1f76f368370599a24390493",
+      "same_as": "r01"
+    },
+    "lid.stl": {
+      "quantity": 1,
+      "sha256": "36875d3c29ef35034802af132404a68cd8e499c783d3e4fb83823df05485bcf2"
+    },
+    "board-carrier.stl": {
+      "quantity": 1,
+      "sha256": "24496ed08bbf04b1c6e9d03ece860557399cae1c7b8536435a1db38ac8b4ad69",
+      "same_as": "r01"
+    }
+  },
+  "hardware": {
+    "lid": "4 M3x8 screws + 4 M3 heat-set inserts in the columns",
+    "board_carrier": "none: drops onto the floor pins, held by the lid",
+    "antenna": "bulkhead SMA connector in the 6.8 mm hole of the lid, IPEX 1.0 pigtail of at least 90 mm",
+    "power": "USB-C cable through the back opening; no battery"
+  },
+  "limits": [
+    "Board length 50.2 mm from the datasheet drawing; an earlier caliper reading gave 51.96 mm, which may have included the USB-C. The heads locate the board by its antenna end, so the RST pinhole and the PRG nub are stretched 1.76 mm along the board to suit either length. Check which one it is on the first print.",
+    "USB-C overhang past the PCB edge (1.5 mm) is an estimate; a smaller overhang only leaves a gap between the connector and the wall.",
+    "Button centres (3.4 mm from the USB end; RST 4.4 mm and PRG 6.0 mm from the long edges) are estimated from a scaled photo. The nub is 4 mm wide and the RST pinhole 3 mm to absorb about 1 mm of error across the board.",
+    "OLED position along the board from the datasheet drawing scale (2.4 mm from the antenna end, centred across). The window (28.28 x 18.5 mm) was closed in by eye on the r01 dry fit, not from a measurement of the dark display area: it sits inside the glass outline by 1 mm at the USB end, 4 mm at the antenna end and 1.78 mm on the RST side, and 1.72 mm outside it on the PRG side. The r02 dry fit was reported good; the margin left around the dark area was not measured. If a later board shows the lid clipping the display, reopen the window margins in model.py.",
+    "Flexible PRG tab (12 x 6 x 1.0 mm, nub 4.6 mm tall) untested: stiffness, fatigue and whether the nub lands on the switch dome depend on the print and on the button position.",
+    "SMA bulkhead body and nut modelled as Ø8 x 9 mm and Ø9.2 x 2.5 mm under the lid, not measured; the 130 mm pigtail of the kit reaches the back corner with room to spare.",
+    "Battery connector under the board (3.13 mm) has 1.2 mm of clearance over the carrier crossbars; it is the only part under the board, but its position was not measured, so the clearance applies everywhere.",
+    "Rail slot 2.3 mm for a 1.63 mm PCB whose header holes keep some solder after the pins were removed; file any bump at the edge if the board does not slide.",
+    "Insert hole Ø4.0 x 6.5 mm, chamfered to Ø5.0 at the mouth, sized for an M3 insert 5.7 mm long and Ø4.6 outside; check against the insert used.",
+    "Pin clearance (0.2 mm on the radius) and lid post clearance (0.3 mm) carried over from the transmitter enclosure, where they are also untested.",
+    "No ventilation openings besides the window; no sealing. Indoor use only.",
+    "The antenna pigtail is not modelled."
+  ]
+}
